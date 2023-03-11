@@ -16,6 +16,8 @@
   --pading-block: 2rem;
 
   --margin-top: 10rem;
+
+  --section-spacer: 7.5rem;
 }
 
 @media (min-width: 50rem) {
@@ -151,10 +153,23 @@ main {
   position: relative;
 }
 
+section {
+  margin-block: var(--section-spacer);
+}
+
+section:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: var(--section-spacer);
+}
+
 .container {
   padding-inline: var(--pading-inline);
   max-width: 1500px;
   margin-inline: auto;
+}
+
+.spacer-top {
+  padding-top: var(--margin-top);
 }
 
 .btn {
@@ -178,7 +193,7 @@ main {
 }
 
 .big-heading {
-  font-size: clamp(3.75rem, 10vw + 1rem, 7.5rem);
+  font-size: clamp(2rem, 7vw + 1rem, 7.5rem);
   font-weight: var(--fw-black);
   line-height: 1;
 }
@@ -223,6 +238,10 @@ main {
     max-width: 6ch;
     overflow-wrap: break-word;
   }
+}
+
+.text-s {
+  font-size: var(--fs-300);
 }
 
 /* END GENERAL STYLINGS */
@@ -333,7 +352,7 @@ footer {
   display: flex;
   gap: 3rem;
 
-  animation: marquee 10s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 .side-carousel:hover div {
@@ -356,3 +375,102 @@ footer {
 }
 
 /* END HOME */
+
+/* MEMOIR */
+
+.quote {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 450px;
+  margin-inline: auto;
+}
+
+.flex-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+@media (min-width: 800px) {
+  .flex-area {
+    flex-direction: row;
+  }
+}
+
+.flex-area .about-me-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  width: 800px;
+  max-width: 100%;
+}
+
+.flex-area .about-me-info p:nth-child(2) {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.flex-area .image-carousel {
+  width: 350px;
+  height: 520px;
+
+  background-image: url('../images/Variant-1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  animation: image-carousel 6s ease-in-out infinite;
+}
+
+@keyframes image-carousel {
+  0% {
+    background-image: url('../images/Variant-1.png');
+  }
+  30% {
+    background-image: url('../images/Variant-1.png');
+  }
+  34% {
+    background-image: url('../images/Variant-2.png');
+  }
+  62% {
+    background-image: url('../images/Variant-2.png');
+  }
+  67% {
+    background-image: url('../images/Variant-3.png');
+  }
+  96% {
+    background-image: url('../images/Variant-3.png');
+  }
+}
+
+.years-slider {
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  border-block: 2px solid var(--neutral-clr-100);
+
+  margin-bottom: 4rem;
+}
+
+.years-slider::-webkit-scrollbar {
+  height: 1px;
+}
+
+.years-slider .years-slider-item {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+  color: var(--neutral-clr-100);
+}
+
+#year-info {
+  text-align: center;
+  margin-inline: auto;
+}
+
+/* END MEMOIR */

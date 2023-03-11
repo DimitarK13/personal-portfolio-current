@@ -1,5 +1,13 @@
+'use strict';
+
 const text_El = document.querySelector('#change-text');
-const texts = ['Designer', 'Co-Founder', 'Developer'];
+const texts = [
+  'Designer',
+  'Co-Founder',
+  'Developer',
+  'Innovative',
+  'Persistent',
+];
 let counter = 0;
 
 setInterval(() => {

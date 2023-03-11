@@ -1,3 +1,5 @@
+'use strict';
+
 const navToggle = document.querySelector('#toggle-nav');
 const image = navToggle.querySelector('img');
 const nav = document.querySelector('.nav-list');
