@@ -181,6 +181,7 @@ section:last-of-type {
   padding: 0.5rem 2rem;
   border: 2px solid var(--neutral-clr-100);
   border-radius: 100vw;
+  color: var(--neutral-clr-100);
 }
 
 .btn:hover,
@@ -474,3 +475,43 @@ footer {
 }
 
 /* END MEMOIR */
+
+/* CONTACT */
+
+.input-box {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 500px;
+  max-width: 100%;
+  resize: none;
+  background-color: rgb(0 0 0 / 0.5);
+  border: 2px solid var(--neutral-clr-100);
+  border-radius: 10px;
+  padding: 1rem;
+  color: var(--neutral-clr-100);
+}
+
+.input-box label {
+  position: absolute;
+  left: calc(1rem + 2px);
+  top: calc(1rem + 2px);
+
+  transition: transform 250ms ease-in-out;
+}
+
+.input-box input:focus ~ label,
+.input-box textarea:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label,
+.input-box textarea:not(:placeholder-shown) ~ label {
+  transform: translate(-0.5rem, -3.25rem) scale(0.85);
+}
+
+.input-box ::placeholder {
+  visibility: hidden;
+}
+
+/* END CONTACT */

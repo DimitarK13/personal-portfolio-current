@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <script src="assets/scripts/navigation.js" defer></script>
+
+    <title>Web Developer • DK</title>
+  </head>
+  <body id="contact">
+    <div class="container">
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <button id="toggle-nav">
+          <img src="assets/images/nav-toggle.png" alt="Navigation Toggle" />
+        </button>
+
+        <ul class="nav-list" active="false">
+          <li class="nav-item uppercase">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item uppercase"><a href="work.html">Work</a></li>
+          <li class="nav-item uppercase"><a href="designs.html">Designs</a></li>
+          <li class="nav-item uppercase"><a href="memoir.html">Memoir</a></li>
+          <li class="nav-item uppercase">
+            <a class="btn" href="contact.html"
+              >Contact
+              <svg
+                width="21"
+                height="16"
+                viewBox="0 0 21 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9H20V7H0V9Z"
+                  fill="white"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="grid-area">
+          <p>Don’t stress it too much, just write something :)</p>
+          <div class="decorative-line"></div>
+          <form action="/" method="post">
+            <div class="input-box">
+              <input type="text" name="name" id="name" placeholder="Random" />
+              <label for="name" class="uppercase">Name</label>
+            </div>
+
+            <div class="input-box">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Random"
+              />
+              <label for="email" class="uppercase">Email</label>
+            </div>
+
+            <div class="input-box">
+              <textarea
+                name="message"
+                id="message"
+                cols="20"
+                rows="4"
+                placeholder="Random"
+              ></textarea>
+              <label for="message" class="uppercase">Message</label>
+            </div>
+
+            <button type="submit" class="btn">
+              Send
+              <svg
+                width="21"
+                height="16"
+                viewBox="0 0 21 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9H20V7H0V9Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
