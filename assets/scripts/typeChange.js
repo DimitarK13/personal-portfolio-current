@@ -2,10 +2,12 @@
 
 const text_El = document.querySelector('#change-text');
 const texts = [
-  'Designer',
-  'Co-Founder',
   'Developer',
+  'Designer',
   'Innovative',
+  'Brilliant',
+  'Charming',
+  'Obdurate',
   'Persistent',
 ];
 let counter = 0;
