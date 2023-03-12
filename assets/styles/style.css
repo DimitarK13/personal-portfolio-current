@@ -30,6 +30,17 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 0.75rem;
+  background-color: var(--neutral-clr-900);
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--neutral-clr-100);
+  border-radius: 100vw;
+}
+
 ::selection {
   background-color: var(--neutral-clr-100);
   color: var(--neutral-clr-900);
@@ -459,10 +470,6 @@ footer {
   margin-bottom: 4rem;
 }
 
-.years-slider::-webkit-scrollbar {
-  height: 1px;
-}
-
 .years-slider .years-slider-item {
   font-size: var(--fs-600);
   font-weight: var(--fw-bold);
@@ -525,3 +532,121 @@ form {
 }
 
 /* END CONTACT */
+
+/* WORK */
+
+.live-project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-block: 2px solid var(--neutral-clr-100);
+}
+
+.live-project a {
+  font-size: clamp(1.5rem, 5vw + 0.1rem, 5rem);
+  line-height: 1;
+}
+
+.live-project a:hover ~ svg > path {
+  animation: slide-arrow 0.5s ease-in-out;
+}
+
+@keyframes slide-arrow {
+  50% {
+    transform: translateX(100%);
+  }
+  51% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 900px) {
+  .live-project svg {
+    display: none;
+  }
+}
+
+.side-project {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: space-between;
+}
+
+.side-project .content h2 {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2rem;
+}
+
+.side-project .content .btn {
+  margin-top: 4rem;
+}
+
+.side-project img {
+  width: 650px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(0 0 0 / 0.25);
+}
+
+@media (min-width: 1100px) {
+  .side-project {
+    flex-direction: row;
+  }
+}
+
+.project-heading {
+  text-align: center;
+  margin-inline: auto;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-bold);
+  margin-bottom: 3rem;
+}
+
+.project-description {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.project-description ul {
+  list-style: disc;
+  list-style-position: inside;
+  margin-top: 0.75rem;
+}
+
+.project-carousel {
+  margin-top: var(--section-spacer);
+  padding-bottom: var(--section-spacer);
+
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+
+  cursor: grab;
+}
+
+.project-carousel.grabbed {
+  cursor: grabbing;
+}
+
+.project-carousel img {
+  aspect-ratio: 16 / 9;
+  width: 1000px;
+  margin-inline: auto;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(0 0 0 / 0.25);
+}
+
+/* END WORK */
