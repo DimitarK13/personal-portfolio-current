@@ -204,6 +204,11 @@ section:last-of-type {
   fill: var(--neutral-clr-900);
 }
 
+.btn:hover > svg path,
+.btn:focus > svg path {
+  animation: slide-arrow 500ms ease-in-out;
+}
+
 .big-heading {
   font-size: clamp(2rem, 7vw + 1rem, 7.5rem);
   font-weight: var(--fw-black);
