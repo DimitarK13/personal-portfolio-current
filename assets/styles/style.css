@@ -132,28 +132,38 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: 20%;
   z-index: -1;
+
+  clip-path: polygon(50% 25%, 75% 50%, 50% 75%, 25% 50%);
+
+  animation: reveal-background 2s 1s ease-in-out forwards;
+}
+
+@keyframes reveal-background {
+  100% {
+    clip-path: polygon(0% 100%, 0 0, 100% 0, 100% 100%);
+    opacity: 20%;
+  }
 }
 
 #home::before {
-  background-image: url(../images/backgrounds/home.jpg);
+  background-image: url(../images/backgrounds/home.png);
 }
 
 #work::before {
-  background-image: url(../images/backgrounds/work.jpg);
+  background-image: url(../images/backgrounds/work.png);
 }
 
 #designs::before {
-  background-image: url(../images/backgrounds/designs.jpg);
+  background-image: url(../images/backgrounds/designs.png);
 }
 
 #memoir::before {
-  background-image: url(../images/backgrounds/memoir.jpg);
+  background-image: url(../images/backgrounds/memoir.png);
 }
 
 #contact::before {
-  background-image: url(../images/backgrounds/contact.jpg);
+  background-image: url(../images/backgrounds/contact.png);
 }
 
 /* END BACKGROUNDS */
