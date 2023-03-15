@@ -286,7 +286,7 @@ footer {
 }
 
 .social-links:hover .social-links-item:not(:hover):not(:focus) {
-  opacity: 50%;
+  opacity: 50% !important;
   transform: scale(0.9);
 }
 
@@ -324,7 +324,7 @@ footer {
 }
 
 .nav-list:hover .nav-item:not(:hover):not(:focus) {
-  opacity: 50%;
+  opacity: 50% !important;
   transform: scale(0.9);
 }
 
@@ -665,3 +665,7 @@ form {
 }
 
 /* END WORK */
+
+.anim-el {
+  opacity: 0;
+}

@@ -19,18 +19,18 @@
   <body id="designs">
     <div class="container">
       <nav class="primary-nav" aria-label="Primary Navigation">
-        <button id="toggle-nav">
+        <button id="toggle-nav" class="anim-el anim-nav-el">
           <img src="assets/images/nav-toggle.png" alt="Navigation Toggle" />
         </button>
 
         <ul class="nav-list" active="false">
-          <li class="nav-item uppercase">
+          <li class="nav-item uppercase anim-el anim-nav-el">
             <a href="index.html">Home</a>
           </li>
-          <li class="nav-item uppercase"><a href="work.html" >Work</a></li>
-          <li class="nav-item uppercase"><a href="designs.html" active>Designs</a></li>
-          <li class="nav-item uppercase"><a href="memoir.html">Memoir</a></li>
-          <li class="nav-item uppercase">
+          <li class="nav-item uppercase anim-el anim-nav-el"><a href="work.html" >Work</a></li>
+          <li class="nav-item uppercase anim-el anim-nav-el"><a href="designs.html" active>Designs</a></li>
+          <li class="nav-item uppercase anim-el anim-nav-el"><a href="memoir.html">Memoir</a></li>
+          <li class="nav-item uppercase anim-el anim-nav-el">
             <a class="btn" href="contact.html"
               >Contact
               <svg
@@ -51,7 +51,7 @@
 
       <main>
         <div class="spacer-top">
-            <div class="project-carousel">
+            <div class="project-carousel anim-el anim-1">
                 <img src="assets/images/designs/design-1.png" alt="Dark themed landing page for personal trainer. Woman and Man exercising in the back with a title, paragraph and primary CTA. Navigation and a modern button saying learn more, indicating to scroll down. " class="project-carousel-item">
                 <img src="assets/images/designs/design-2.png" alt="Dark themed ladning page for a fashion studio - Breath.ing Darkness. 3 Images of a young girl in the back and a large heading in front of them. Also a location saying Strumica, North Macedonia. Logo at the top." class="project-carousel-item">
                 <img src="assets/images/designs/design-3.png" alt="Weather app with sunset background with mountains and fog. Primary content on the left side saying the location - Strumica, the current date and temperture. At the bottom is a forecast for the next five days. In the top left corner of the app are displayed the current wind speed, pressure, humidity and visibility." class="project-carousel-item">
@@ -62,6 +62,8 @@
         </div>
       </main>
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+      <script src="assets/scripts/animations.js"></script>
       <script src="assets/scripts/projectCarousel.js"></script>
   </body>
 </html>
