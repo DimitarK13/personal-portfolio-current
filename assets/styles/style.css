@@ -420,7 +420,7 @@ footer {
   gap: 4rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .flex-area {
     flex-direction: row;
   }
