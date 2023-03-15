@@ -24,7 +24,7 @@ years.forEach((year) => {
       if (i < yearText.length) {
         textOutput_El.textContent += yearText.charAt(i);
         i++;
-        setTimeout(spellFunc, 50);
+        setTimeout(spellFunc, 30);
       }
     };
 
