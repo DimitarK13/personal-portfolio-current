@@ -147,23 +147,23 @@ button {
 }
 
 #home::before {
-  background-image: url(../images/backgrounds/home.png);
+  background-image: url(../images/backgrounds/home.jpg);
 }
 
 #work::before {
-  background-image: url(../images/backgrounds/work.png);
+  background-image: url(../images/backgrounds/work.jpg);
 }
 
 #designs::before {
-  background-image: url(../images/backgrounds/designs.png);
+  background-image: url(../images/backgrounds/designs.jpg);
 }
 
 #memoir::before {
-  background-image: url(../images/backgrounds/memoir.png);
+  background-image: url(../images/backgrounds/memoir.jpg);
 }
 
 #contact::before {
-  background-image: url(../images/backgrounds/contact.png);
+  background-image: url(../images/backgrounds/contact.jpg);
 }
 
 /* END BACKGROUNDS */
