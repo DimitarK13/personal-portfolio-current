@@ -16,10 +16,10 @@ navToggle.addEventListener('click', () => {
 
 function openNav() {
   nav.setAttribute('active', 'false');
-  image.setAttribute('src', 'assets/images/nav-toggle.png');
+  image.setAttribute('src', 'assets/images/nav-toggle.webp');
 }
 
 function closeNav() {
   nav.setAttribute('active', 'true');
-  image.setAttribute('src', 'assets/images/nav-toggle-close.png');
+  image.setAttribute('src', 'assets/images/nav-toggle-close.webp');
 }

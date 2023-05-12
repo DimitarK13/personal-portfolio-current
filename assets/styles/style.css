@@ -147,23 +147,23 @@ button {
 }
 
 #home::before {
-  background-image: url(../images/backgrounds/home.jpg);
+  background-image: url(../images/backgrounds/home.webp);
 }
 
 #work::before {
-  background-image: url(../images/backgrounds/work.jpg);
+  background-image: url(../images/backgrounds/work.webp);
 }
 
 #designs::before {
-  background-image: url(../images/backgrounds/designs.jpg);
+  background-image: url(../images/backgrounds/designs.webp);
 }
 
 #memoir::before {
-  background-image: url(../images/backgrounds/memoir.jpg);
+  background-image: url(../images/backgrounds/memoir.webp);
 }
 
 #contact::before {
-  background-image: url(../images/backgrounds/contact.jpg);
+  background-image: url(../images/backgrounds/contact.webp);
 }
 
 /* END BACKGROUNDS */
@@ -444,7 +444,7 @@ footer {
   width: 350px;
   height: 520px;
 
-  background-image: url('../images/Variant-1.png');
+  background-image: url('../images/Variant-1.webp');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -453,22 +453,22 @@ footer {
 
 @keyframes image-carousel {
   0% {
-    background-image: url('../images/Variant-1.png');
+    background-image: url('../images/Variant-1.webp');
   }
   30% {
-    background-image: url('../images/Variant-1.png');
+    background-image: url('../images/Variant-1.webp');
   }
   34% {
-    background-image: url('../images/Variant-2.png');
+    background-image: url('../images/Variant-2.webp');
   }
   62% {
-    background-image: url('../images/Variant-2.png');
+    background-image: url('../images/Variant-2.webp');
   }
   67% {
-    background-image: url('../images/Variant-3.png');
+    background-image: url('../images/Variant-3.webp');
   }
   96% {
-    background-image: url('../images/Variant-3.png');
+    background-image: url('../images/Variant-3.webp');
   }
 }
 
