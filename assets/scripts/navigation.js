@@ -1,7 +1,7 @@
 'use strict';
 
 const navToggle = document.querySelector('#toggle-nav');
-const image = navToggle.querySelector('img');
+const icon = navToggle.querySelector('span');
 const nav = document.querySelector('.nav-list');
 
 navToggle.addEventListener('click', () => {
@@ -16,10 +16,10 @@ navToggle.addEventListener('click', () => {
 
 function openNav() {
   nav.setAttribute('active', 'false');
-  image.setAttribute('src', 'assets/images/nav-toggle.webp');
+  icon.textContent = 'menu';
 }
 
 function closeNav() {
   nav.setAttribute('active', 'true');
-  image.setAttribute('src', 'assets/images/nav-toggle-close.webp');
+  icon.textContent = 'close';
 }

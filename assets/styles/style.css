@@ -339,6 +339,11 @@ footer {
     z-index: 9999;
   }
 
+  #toggle-nav span {
+    font-size: 2rem;
+    color: var(--neutral-clr-100);
+  }
+
   .nav-list {
     position: absolute;
     padding-top: var(--margin-top);
