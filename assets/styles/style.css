@@ -133,17 +133,7 @@ button {
   background-position: center;
   background-size: cover;
   z-index: -1;
-
-  clip-path: polygon(50% 25%, 75% 50%, 50% 75%, 25% 50%);
-
-  animation: reveal-background 2s 1s ease-in-out forwards;
-}
-
-@keyframes reveal-background {
-  100% {
-    clip-path: polygon(0% 100%, 0 0, 100% 0, 100% 100%);
-    opacity: 20%;
-  }
+  opacity: 20%;
 }
 
 #home::before {
@@ -668,7 +658,3 @@ form {
 }
 
 /* END WORK */
-
-.anim-el {
-  opacity: 0;
-}
