@@ -552,6 +552,10 @@ form {
   border-block: 2px solid var(--neutral-clr-100);
 }
 
+.live-project.align-center {
+  justify-content: center;
+}
+
 .live-project a {
   font-size: clamp(1.5rem, 5vw + 0.1rem, 5rem);
   line-height: 1;
