@@ -124,8 +124,7 @@ button {
 #home::before,
 #work::before,
 #designs::before,
-#memoir::before,
-#contact::before {
+#memoir::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -150,10 +149,6 @@ button {
 
 #memoir::before {
   background-image: url(../images/backgrounds/memoir.webp);
-}
-
-#contact::before {
-  background-image: url(../images/backgrounds/contact.webp);
 }
 
 /* END BACKGROUNDS */
@@ -386,6 +381,10 @@ footer {
   100% {
     transform: translateY(100%);
   }
+}
+
+.side-carousel div p {
+  text-transform: uppercase;
 }
 
 @media (max-width: 1200px) {
