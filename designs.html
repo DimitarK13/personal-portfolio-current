@@ -26,11 +26,13 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <script src="assets/scripts/navigation.js" defer></script>
+
+    <script defer src="assets/scripts/navigation.js"></script>
+    <script defer src="assets/scripts/projectPreview.js"></script>
 
     <title>Designs • Dimitar Kalapocev</title>
   </head>
-  <body id="designs">
+  <body>
     <div class="container">
       <nav class="primary-nav" aria-label="Primary Navigation">
         <button id="toggle-nav">
@@ -71,7 +73,48 @@
 
       <main>
         <div class="spacer-top">
-          <div class="project-carousel">
+          <div class="projects">
+            <img
+              class="project"
+              src="assets/images/designs/design-1.png"
+              alt=""
+            />
+            <img
+              class="project"
+              src="assets/images/designs/design-2.png"
+              alt=""
+            />
+            <img
+              class="project"
+              src="assets/images/designs/design-3.png"
+              alt=""
+            />
+            <img
+              class="project"
+              src="assets/images/designs/design-4.png"
+              alt=""
+            />
+            <img
+              class="project"
+              src="assets/images/designs/design-5.png"
+              alt=""
+            />
+            <img
+              class="project"
+              src="assets/images/designs/design-6.png"
+              alt=""
+            />
+
+            <div
+              class="project-preview"
+              aria-hidden="true"
+              aria-expanded="false"
+            >
+              <img src="assets/images/designs/design-5.png" alt="" />
+            </div>
+          </div>
+
+          <!-- <div class="project-carousel">
             <img
               src="assets/images/designs/design-1.webp"
               alt="Dark themed landing page for personal trainer. Woman and Man exercising in the back with a title, paragraph and primary CTA. Navigation and a modern button saying learn more, indicating to scroll down. "
@@ -102,11 +145,9 @@
               alt="Landing page for NIOL - electronic cigarettes. White background with a image of a electonic cigarette with splashed green-blue background. Heading saying 'No addication, Just pure pleasure', related paragraph and a primary CTA. Navigation at the top with 4 links."
               class="project-carousel-item"
             />
-          </div>
+          </div> -->
         </div>
       </main>
     </div>
-
-    <script src="assets/scripts/projectCarousel.js"></script>
   </body>
 </html>
