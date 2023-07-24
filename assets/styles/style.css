@@ -393,20 +393,25 @@ footer {
 /* MEMOIR */
 
 .quote {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  max-width: 450px;
   margin-inline: auto;
+  text-align: center;
+  background-color: var(--neutral-clr-900);
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 100vw;
+  border: 1px solid var(--neutral-clr-100);
+}
+
+.quote h1 {
+  font-size: var(--fs-400);
 }
 
 .flex-area {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 10rem;
 }
 
 @media (min-width: 900px) {
@@ -416,12 +421,7 @@ footer {
 }
 
 .flex-area .about-me-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-
-  width: 800px;
-  max-width: 100%;
+  max-width: 65ch;
 }
 
 .flex-area .about-me-info p:nth-child(2) {
@@ -461,26 +461,102 @@ footer {
   }
 }
 
-.years-slider {
+.skills {
   display: flex;
-  gap: 5rem;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+.skills .skill {
+  width: 250px;
+}
+
+.skill-flex {
+  display: flex;
+  align-items: end;
   justify-content: space-between;
-  align-items: center;
-  overflow-x: scroll;
-  border-block: 2px solid var(--neutral-clr-100);
-
-  margin-bottom: 4rem;
 }
 
-.years-slider .years-slider-item {
-  font-size: var(--fs-600);
-  font-weight: var(--fw-bold);
-  color: var(--neutral-clr-100);
+.skill-flex h2 {
+  font-size: var(--fs-500);
+  text-transform: uppercase;
 }
 
-#year-info {
-  text-align: center;
-  margin-inline: auto;
+.skill-flex p {
+  font-size: var(--fs-300);
+}
+
+.progress-bar {
+  height: 36px;
+  width: 100%;
+  border: 1px solid var(--neutral-clr-100);
+  border-radius: 100vw;
+  margin-top: 1rem;
+
+  position: relative;
+}
+
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  background-color: var(--neutral-clr-100);
+  inset: 8px;
+  border-radius: 100vw;
+}
+
+.progress-bar[data-count='1']::before {
+  width: calc(99% - 16px);
+}
+
+.progress-bar[data-count='2']::before {
+  width: calc(99% - 16px);
+}
+
+.progress-bar[data-count='3']::before {
+  width: calc(95% - 16px);
+}
+
+.progress-bar[data-count='4']::before {
+  width: calc(65% - 16px);
+}
+
+.progress-bar[data-count='5']::before {
+  width: calc(60% - 16px);
+}
+
+.progress-bar[data-count='6']::before {
+  width: calc(45% - 16px);
+}
+
+.progress-bar[data-count='7']::before {
+  width: calc(40% - 16px);
+}
+
+.progress-bar[data-count='8']::before {
+  width: calc(40% - 16px);
+}
+
+.grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .grid p {
+    grid-column: span 2;
+  }
+
+  .grid p:nth-child(4) {
+    grid-column: 2 / 4;
+  }
+
+  .grid p:nth-child(5) {
+    grid-column: 5 / -1;
+  }
 }
 
 /* END MEMOIR */
